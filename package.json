@@ -1,0 +1,25 @@
+{
+  "name": "js-algo_ds",
+  "version": "1.0.0",
+  "description": "Algorithms from all around i can find",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "jest": "^27.0.6"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com_official:kristhiantiu/js-algo_ds.git"
+  },
+  "keywords": [
+    "algorithms",
+    "data",
+    "structures",
+    "javascript"
+  ],
+  "author": "Kristhian Tiu",
+  "license": "ISC"
+}
