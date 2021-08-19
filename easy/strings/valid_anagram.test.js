@@ -24,6 +24,6 @@ test(`'qwerty' and 'qeywrt' is true`, () => {
   expect(validAnagram('qwerty', 'qeywrt')).toBe(true);
 });
 
-test(`'texttwisttime' and 'timetwiesttext' is true`, () => {
+test(`'texttwisttime' and 'timetwisttext' is true`, () => {
   expect(validAnagram('texttwisttime', 'timetwisttext')).toBe(true);
 });
