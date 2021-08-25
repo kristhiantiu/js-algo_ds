@@ -208,6 +208,7 @@ class SinglyLinkedList {
   }
 }
 
+module.exports = LinkedList
 
 const mySinglyLinkedList = new SinglyLinkedList()
 mySinglyLinkedList.push(1)
