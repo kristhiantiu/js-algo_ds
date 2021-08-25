@@ -92,6 +92,24 @@ class Graph {
     return results;
   }
 
+  bfsIterative(start) {
+    const visitQueue = []
+    const visited = new Set()
+    const results = []
+    visitQueue.push(start)
+    while(visitQueue.length > 0) {
+      const vertex = visitQueue.shift()
+      if (!visited.has(vertex)) {
+        visited.add(vertex)
+        results.push(vertex)
+        for(let neighbor of this.adjacencyList[vertex]) {
+          visitQueue.push(neighbor)
+        }
+      }
+    }
+    return results;
+  }
+
 
 }
 
@@ -121,3 +139,6 @@ console.log('ACTUAL ANSWER [recursion] : ', output3)
 
 let output4 = g.dfsIterative('A')
 console.log('ACTUAL ANSWER [iteration] : ', output4)
+
+let output5 = g.bfsIterative('A')
+console.log('BFS ACTUAL ANSWER [iteration] : ', output5)
