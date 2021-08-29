@@ -62,14 +62,14 @@ class Graph {
       if (!vertex) return null;
       visited[vertex] = true
       results.push(vertex)
-      
-      adjacencyList[vertex].forEach(neighbor => {
-      // for(let neighbor of adjacencyList[vertex]) {
+      const arr = adjacencyList[vertex]
+      // adjacencyList[vertex].forEach(neighbor => {
+      for(let neighbor of arr) {
       // for(let i=0; i < adjacencyList[vertex].length; ++i) {
         if (!visited[neighbor]) {
           return dfs(neighbor)
         }
-      })
+      }
     })(start)
     return results;
   }
